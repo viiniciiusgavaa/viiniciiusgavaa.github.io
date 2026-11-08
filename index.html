@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Vinicius Gava · Implementation Consultant</title>
+<meta name="description" content="Implementation consultant for AI and workflow automation. Process mapping to production, backed by 8 years in last-mile operations at Mercado Livre, Cainiao (Alibaba Group) and Autoglass.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vinicius Gava · Implementation Consultant">
+<meta property="og:description" content="Implementation consultant for AI and workflow automation. Process mapping to production, backed by 8 years in last-mile operations at Mercado Livre, Cainiao (Alibaba Group) and Autoglass.">
+<meta property="og:url" content="https://viiniciiusgavaa.github.io/">
+<link rel="canonical" href="https://viiniciiusgavaa.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&amp;family=JetBrains+Mono:wght@500&amp;family=Silkscreen:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<div id="app"></div>
+<noscript><p style="font-family:sans-serif;color:#F2F4FA;padding:24px">This site needs JavaScript. You can find me on <a href="https://www.linkedin.com/in/viniciusgavaa" style="color:#B9FC01">LinkedIn</a>.</p></noscript>
+<template id="tpl-Main">
+
+<div style="background: #0B0F1F; color: #F2F4FA; font-family: 'Nunito', system-ui, sans-serif">
+
+<nav style="position: sticky; top: 0; z-index: 60; background: rgba(11,15,31,0.94); border-bottom: 2px solid #222C52">
+<div style="max-width: 1180px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F2F4FA">
+<span class="px" style="width: 38px; height: 38px; background: #0131CD; color: #B9FC01; font-size: 13px; display: flex; align-items: center; justify-content: center; box-shadow: 3px 3px 0 #B9FC01">VG</span>
+<span style="display: flex; flex-direction: column; line-height: 1.1">
+<span style="font-size: 20px; font-weight: 900">Vinicius Gava</span>
+<span class="px" style="font-size: 11px; color: #B9FC01">● Open to C2C · remote</span>
+</span>
+</a>
+<div style="display: flex; align-items: center; gap: 2px; flex-wrap: wrap">
+<a class="nl" href="#showcase" style="padding: 10px 10px; font-size: 15px; font-weight: 700; color: #CDD3E6; text-decoration: none">Showcase</a>
+<a class="nl" href="#hostmind" style="padding: 10px 10px; font-size: 15px; font-weight: 700; color: #CDD3E6; text-decoration: none">HostMind</a>
+<a class="nl" href="#projects" style="padding: 10px 10px; font-size: 15px; font-weight: 700; color: #CDD3E6; text-decoration: none">Projects</a>
+<a class="nl" href="#journey" style="padding: 10px 10px; font-size: 15px; font-weight: 700; color: #CDD3E6; text-decoration: none">Journey</a>
+<a href="#contact" class="pxbtn" style="margin-left: 8px; padding: 10px 14px; background: #0131CD; color: #FFFFFF; font-size: 15px; font-weight: 800; text-decoration: none">Get in touch</a>
+</div>
+</div>
+</nav>
+
+<header id="top" style="max-width: 1180px; margin: 0 auto; padding: 44px 24px 64px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div class="px" style="font-size: 12px; color: #B9FC01; background: #1A2A10; align-self: flex-start; padding: 6px 10px; box-shadow: 3px 3px 0 #222C52">Implementation Consultant · AI · Automation</div>
+<h1 style="margin: 0; font-size: 52px; line-height: 1.05; font-weight: 900; letter-spacing: -0.02em">I implement AI where operations actually happen<span class="cursor" style="color: #B9FC01">_</span></h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #CDD3E6; max-width: 540px">Implementation consultant for AI and workflow automation. I take a process from mapping to production: discovery, requirements, build, UAT, training and go-live. Backed by 8 years in last-mile and transportation operations at Mercado Livre, Cainiao (Alibaba Group) and Autoglass.</p>
+<div style="display: flex; gap: 14px; flex-wrap: wrap">
+<a href="#showcase" class="pxbtn" style="padding: 14px 20px; background: #0131CD; color: #FFFFFF; font-size: 16px; font-weight: 800; text-decoration: none"><span class="px" style="font-size: 12px; color: #B9FC01">▶</span> See the interactive maps</a>
+<a href="https://www.linkedin.com/in/viniciusgavaa" class="pxbtn ghost" style="padding: 13px 18px; background: #141B33; border: 2px solid #222C52; color: #F2F4FA; font-size: 16px; font-weight: 800; text-decoration: none">LinkedIn</a>
+<a href="https://github.com/viiniciiusgavaa" class="pxbtn ghost" style="padding: 13px 18px; background: #141B33; border: 2px solid #222C52; color: #F2F4FA; font-size: 16px; font-weight: 800; text-decoration: none">GitHub</a>
+</div>
+</div>
+
+<div style="flex: 1 1 460px; min-width: 0; background: #141B33; padding: 14px; box-shadow: inset 0 0 0 3px #070A16, 8px 8px 0 #070A16">
+<div style="position: relative; background-color: #222C52; background-image: repeating-linear-gradient(90deg, rgba(90,60,30,0.07) 0 3px, transparent 3px 40px); box-shadow: inset 10px 10px 0 rgba(0,0,0,0.16), inset -3px -3px 0 rgba(255,255,255,0.35); padding: 22px 16px 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px">
+<span class="px" style="position: absolute; top: 4px; right: 10px; font-size: 11px; background: #B9FC01; color: #070A16; padding: 1px 6px">LV.8</span>
+<sc-for list="{{rooms}}" as="rm" hint-placeholder-count="4">
+<a class="room" href="{{rm.href}}" style="{{rm.style}}">
+<sc-if value="{{rm.wip}}" hint-placeholder-val="{{false}}"><span aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: repeating-linear-gradient(90deg, #FFC857 0 8px, #0131CD 8px 16px)"></span></sc-if>
+<span class="px" style="position: absolute; left: 8px; top: 8px; font-size: 11px; color: #FFFFFF; background: #0131CD; padding: 2px 6px">{{rm.label}}</span>
+<svg class="{{rm.bobCls}}" viewBox="0 0 16 20" width="64" height="80" shape-rendering="crispEdges" aria-hidden="true">
+<rect x="3" y="19" width="10" height="1" fill="rgba(30,36,48,0.18)"></rect>
+<rect x="7" y="2" width="2" height="1" fill="#AEB6D2" opacity="{{rm.antOp}}"></rect>
+<rect x="7" y="0" width="2" height="2" fill="{{rm.color}}" opacity="{{rm.antOp}}"></rect>
+<rect x="2" y="5" width="1" height="3" fill="#0B0F1F"></rect>
+<rect x="13" y="5" width="1" height="3" fill="#0B0F1F"></rect>
+<rect x="3" y="3" width="10" height="7" fill="#F2F4FA"></rect>
+<rect x="3" y="9" width="10" height="1" fill="#B0B4C4"></rect>
+<rect x="4" y="4" width="8" height="4" fill="#0B0F1F"></rect>
+<g class="blinkpx"><rect x="5" y="5" width="2" height="2" fill="#B9FC01"></rect><rect x="9" y="5" width="2" height="2" fill="#B9FC01"></rect></g>
+<rect x="6" y="8" width="4" height="1" fill="#B9FC01"></rect>
+<rect x="2" y="11" width="2" height="4" fill="#D9DEEC"></rect>
+<rect class="arm" x="12" y="11" width="2" height="4" fill="#D9DEEC"></rect>
+<rect x="4" y="10" width="8" height="6" fill="#F2F4FA"></rect>
+<rect x="11" y="10" width="1" height="6" fill="#B0B4C4"></rect>
+<rect x="5" y="11" width="6" height="3" fill="#0B0F1F"></rect>
+<rect x="6" y="12" width="4" height="1" fill="{{rm.color}}"></rect>
+<rect x="5" y="16" width="2" height="3" fill="#D9DEEC"></rect>
+<rect x="9" y="16" width="2" height="3" fill="#D9DEEC"></rect>
+<g opacity="{{rm.hatOp}}"><rect x="4" y="1" width="8" height="2" fill="#FFC857"></rect><rect x="2" y="3" width="12" height="1" fill="#FFC857"></rect><rect x="7" y="0" width="2" height="1" fill="#FFC857"></rect><rect x="4" y="2" width="8" height="1" fill="#FFC857"></rect></g>
+</svg>
+<span style="font-size: 13px; color: #CDD3E6; font-weight: 800">{{rm.hint}}</span>
+</a>
+</sc-for>
+</div>
+<div class="px" style="display: flex; justify-content: space-between; gap: 8px; color: #B8C0DA; font-size: 11px; margin-top: 10px"><span>Vinicius Gava</span><span style="color: #B9FC01">Pick a room ▶</span></div>
+</div>
+</header>
+
+<section style="background: #070A16; color: #F2F4FA; border-top: 1px solid #222C52; border-bottom: 1px solid #222C52">
+<div style="max-width: 1180px; margin: 0 auto; padding: 32px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px">
+<div><div class="px" style="font-size: 32px; color: #B9FC01">US$3M+</div><div style="font-size: 15px; color: #CDD3E6">in annual savings from logistics projects I led</div></div>
+<div><div class="px" style="font-size: 32px; color: #B9FC01">7+</div><div style="font-size: 15px; color: #CDD3E6">new operations launched at Mercado Livre and Cainiao</div></div>
+<div><div class="px" style="font-size: 32px; color: #B9FC01">8 yrs</div><div style="font-size: 15px; color: #CDD3E6">in last-mile and transportation operations</div></div>
+<div><div class="px" style="font-size: 32px; color: #B9FC01">-90%</div><div style="font-size: 15px; color: #CDD3E6">packages misclassified as missing with LostCheck</div></div>
+</div>
+</section>
+
+<section id="showcase" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 40px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF; margin-bottom: 8px">room 01 · showcase</div>
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; margin-bottom: 24px">
+<h2 style="margin: 0; font-size: 38px; font-weight: 900; letter-spacing: -0.01em">One component, three businesses</h2>
+<p style="margin: 0; max-width: 480px; font-size: 16px; line-height: 1.6; color: #CDD3E6">The same interactive map with only the data swapped: travel time to the parks, sales by store, or SLA by region. Click the pins. Fictional data.</p>
+</div>
+<div role="tablist" aria-label="Pick a business" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="3">
+<button type="button" role="tab" aria-selected="{{t.on}}" onClick="{{t.pick}}" style="{{t.style}}"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; opacity: 0.8">{{t.num}}</span> {{t.label}}</button>
+</sc-for>
+</div>
+<div style="border-radius: 20px; overflow: hidden; background: #070A16">
+<sc-if value="{{isHosp}}" hint-placeholder-val="{{true}}"><dc-import name="MapHospitality" hint-size="100%,724px"></dc-import></sc-if>
+<sc-if value="{{isSales}}" hint-placeholder-val="{{false}}"><dc-import name="MapSales" hint-size="100%,724px"></dc-import></sc-if>
+<sc-if value="{{isOps}}" hint-placeholder-val="{{false}}"><dc-import name="MapOperations" hint-size="100%,724px"></dc-import></sc-if>
+</div>
+<div style="margin-top: 16px; background: #141B33; border: 1px solid #222C52; border-radius: 18px; padding: 20px 22px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF">What this map powers · n8n flow</span>
+<span style="font-size: 20px; font-weight: 900">{{flow.title}}</span>
+<span style="font-size: 15px; color: #CDD3E6; max-width: 760px">{{flow.desc}}</span>
+</div>
+<span style="{{flow.statusStyle}}">{{flow.status}}</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<sc-for list="{{flow.nodes}}" as="n" hint-placeholder-count="4">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="{{n.box}}">
+<span style="width: 26px; height: 26px; border-radius: 8px; background: #0131CD; color: {{flow.accent}}; font-size: 13px; font-weight: 900; display: flex; align-items: center; justify-content: center">{{n.num}}</span>
+<sc-if value="{{n.jev}}" hint-placeholder-val="{{false}}"><span style="font-size: 11px; font-weight: 900; letter-spacing: 0.04em; background: #0131CD; color: #B9FC01; border-radius: 6px; padding: 3px 7px">JEV</span></sc-if>
+<span style="font-size: 14px; font-weight: 800; color: #F2F4FA">{{n.label}}</span>
+</div>
+<sc-if value="{{n.more}}" hint-placeholder-val="{{true}}"><span aria-hidden="true" style="font-size: 18px; font-weight: 900; color: #AEB6D2">→</span></sc-if>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #B8C0DA; border-top: 1px dashed #222C52; padding-top: 12px"><span style="font-size: 11px; font-weight: 900; letter-spacing: 0.04em; background: #0131CD; color: #B9FC01; border-radius: 6px; padding: 3px 7px">JEV</span><span>AI confidence check: the flow only acts on its own when it is sure. Otherwise a person decides.</span></div>
+</div>
+</section>
+
+<section id="hostmind" style="max-width: 1180px; margin: 0 auto; padding: 60px 24px 40px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF; margin-bottom: 8px">room 02 · projects</div>
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; margin-bottom: 24px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 38px; font-weight: 900; letter-spacing: -0.01em">HostMind</h2>
+<span style="font-size: 16px; font-weight: 800; color: #B9FC01">AI guest-messaging agent for a U.S. vacation rental operation</span>
+</div>
+<p style="margin: 0; max-width: 520px; font-size: 16px; line-height: 1.6; color: #CDD3E6">It reuses the team's approved Quick Replies when they fit, answers the rest from the company's own rules, and hands the conversation to a person when it isn't sure.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 28px">
+<sc-for list="{{hmMetrics}}" as="m" hint-placeholder-count="4">
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 18px 20px">
+<div style="font-size: 34px; font-weight: 900; color: #B9FC01; line-height: 1">{{m.value}}</div>
+<div style="font-size: 14px; color: #B8C0DA; margin-top: 6px">{{m.label}}</div>
+</div>
+</sc-for>
+</div>
+
+<button type="button" class="hmtog" onClick="{{hmToggle}}" aria-expanded="{{hmExpanded}}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #141B33; border: 1px dashed #4D7BFF; border-radius: 16px; padding: 18px 22px; color: #F2F4FA; font-family: inherit; text-align: left; cursor: pointer; margin-bottom: {{hmGap}}"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; font-weight: 900">{{hmLabel}}</span><span style="font-size: 14px; color: #B8C0DA">The 5-step flow, where Jev decides, the memory behind it and a real-style chat example.</span></span><span class="px" style="flex: 0 0 auto; background: #0131CD; color: #FFFFFF; padding: 8px 12px; font-size: 13px; box-shadow: 3px 3px 0 #B9FC01">{{hmIcon}}</span></button>
+<sc-if value="{{hmOpen}}">
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 20px; padding: 22px; margin-bottom: 16px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 16px">
+<span style="font-size: 20px; font-weight: 900">Where automation runs and where AI decides</span>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; background: #1C2546; color: #D9DEEC; border-radius: 999px; padding: 4px 10px">■ Automation · fixed rules in n8n</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; background: #0131CD; color: #DCE4FF; border-radius: 999px; padding: 4px 10px">● AI · the model reads, matches or writes</span>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px">
+<sc-for list="{{hmSteps}}" as="s" hint-placeholder-count="5">
+<div style="{{s.box}}">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 6px">
+<span style="width: 28px; height: 28px; border-radius: 50%; border: 2px solid {{s.color}}; color: {{s.color}}; font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center">{{s.num}}</span>
+<span style="{{s.tagStyle}}">{{s.tag}}</span>
+</div>
+<span style="font-size: 16px; font-weight: 900">{{s.title}}</span>
+<span style="font-size: 14px; line-height: 1.5; color: #CDD3E6">{{s.text}}</span>
+<sc-if value="{{s.branch}}" hint-placeholder-val="{{false}}">
+<div style="display: flex; flex-direction: column; gap: 6px; margin-top: 4px">
+<span style="font-size: 12px; line-height: 1.4; background: #1A2A10; color: #B9FC01; border-radius: 8px; padding: 6px 8px"><b>{{s.yesLabel}}</b> {{s.yes}}</span>
+<span style="font-size: 12px; line-height: 1.4; background: #3A3320; color: #FFC857; border-radius: 8px; padding: 6px 8px"><b>{{s.noLabel}}</b> {{s.no}}</span>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: stretch">
+<div style="flex: 1 1 340px; min-width: 0; background: #141B33; border: 1px solid #222C52; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 20px; font-weight: 900">HostMind's memory</span>
+<sc-for list="{{hmMemory}}" as="mm" hint-placeholder-count="3">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span style="flex: 0 0 auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; background: #1A2A10; color: #B9FC01; border-radius: 999px; padding: 3px 9px; margin-top: 2px">{{mm.tag}}</span>
+<div><div style="font-size: 15px; font-weight: 800">{{mm.title}}</div><div style="font-size: 14px; color: #B8C0DA; line-height: 1.5">{{mm.text}}</div></div>
+</div>
+</sc-for>
+<p style="margin: 0; font-size: 14px; line-height: 1.55; color: #CDD3E6; background: #1C2546; border-radius: 12px; padding: 10px 12px">Updating a document updates the agent. The team keeps the rules current where they already work, with no code changes.</p>
+</div>
+
+<div style="flex: 1.2 1 400px; min-width: 0; background: #141B33; border: 1px solid #222C52; border-radius: 20px; padding: 22px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA; border-bottom: 1px solid #222C52; padding-bottom: 10px"><span>guest messaging · airbnb</span><span>illustrative example</span></div>
+<div style="align-self: flex-start; max-width: 82%; background: #1C2546; border: 1px solid #222C52; border-radius: 14px 14px 14px 4px; padding: 9px 13px; font-size: 14px">Hi! What's the wifi password?</div>
+<div style="align-self: flex-end; max-width: 82%; background: #1A2A10; border-radius: 14px 14px 4px 14px; padding: 9px 13px; font-size: 14px; line-height: 1.45">Hi Sarah! The wifi network and password are on the card by the TV and in your check-in instructions. Enjoy your stay!<div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #141B33; color: #B9FC01; border-radius: 999px; padding: 2px 8px">Jev · Quick Reply match</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #1A2A6B; color: #A9BCFF; border-radius: 999px; padding: 2px 8px">sent</span></div></div>
+<div style="align-self: flex-start; max-width: 82%; background: #1C2546; border: 1px solid #222C52; border-radius: 14px 14px 14px 4px; padding: 9px 13px; font-size: 14px">Our flight lands early. Can we check in at 11am?</div>
+<div style="align-self: flex-end; max-width: 82%; background: #1A2A10; border-radius: 14px 14px 4px 14px; padding: 9px 13px; font-size: 14px; line-height: 1.45">Standard check-in is 4pm because the home is cleaned between stays. We'll confirm early check-in on the morning of your arrival.<div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #141B33; color: #B9FC01; border-radius: 999px; padding: 2px 8px">RAG · check-in policy</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #1A2A6B; color: #A9BCFF; border-radius: 999px; padding: 2px 8px">high confidence · sent</span></div></div>
+<div style="align-self: flex-start; max-width: 82%; background: #1C2546; border: 1px solid #222C52; border-radius: 14px 14px 14px 4px; padding: 9px 13px; font-size: 14px">Also the pool heater isn't working and we paid for it.</div>
+<div style="background: #3A3320; border: 1px dashed #8A7A3A; border-radius: 12px; padding: 9px 13px; font-size: 14px; line-height: 1.45; color: #FFC857"><b>Handed to the guest team.</b> A paid amenity that fails can mean a refund or a repair visit, so HostMind drafts a reply and a person decides.<div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #141B33; color: #B9FC01; border-radius: 999px; padding: 2px 8px">low confidence · compensation</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; background: #141B33; color: #FFC857; border-radius: 999px; padding: 2px 8px">held for team</span></div></div>
+<span style="font-size: 12px; color: #B8C0DA">Names and details are illustrative. The company and its data are anonymized.</span>
+</div>
+</div>
+
+<div style="margin-top: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px">
+<sc-for list="{{hmHow}}" as="h" hint-placeholder-count="5">
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 14px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B9FC01">{{h.n}}</span>
+<span style="font-size: 16px; font-weight: 900">{{h.title}}</span>
+<span style="font-size: 13px; line-height: 1.5; color: #B8C0DA">{{h.text}}</span>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<button type="button" id="projects" class="hmtog" onClick="{{pjToggle}}" aria-expanded="{{pjExpanded}}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #141B33; border: 1px dashed #4D7BFF; border-radius: 16px; padding: 18px 22px; color: #F2F4FA; font-family: inherit; text-align: left; cursor: pointer; margin: 12px 0 {{pjGap}}"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; font-weight: 900">{{pjLabel}}</span><span style="font-size: 14px; color: #B8C0DA">HostMind · ClaimTrack · Jarvis · LostCheck · LiveRoute · HubMap · hover a card to see how it was built</span></span><span class="px" style="flex: 0 0 auto; background: #0131CD; color: #FFFFFF; padding: 8px 12px; font-size: 13px; box-shadow: 3px 3px 0 #B9FC01">{{pjIcon}}</span></button>
+<sc-if value="{{pjOpen}}">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px">
+<sc-for list="{{projects}}" as="p" hint-placeholder-count="6">
+<div class="pcard" style="position: relative; background: #141B33; border: 1px solid #222C52; border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 12px; color: #F2F4FA">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<span style="{{p.dotStyle}}">{{p.badge}}</span>
+<span style="{{p.statusStyle}}">{{p.status}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 20px; font-weight: 900">{{p.name}}</span>
+<span style="font-size: 15px; font-weight: 600; color: #B9FC01">{{p.sub}}</span>
+</div>
+<span style="font-size: 15px; line-height: 1.55; color: #CDD3E6; flex: 1">{{p.text}}</span>
+<span style="display: flex; flex-wrap: wrap; gap: 5px"><sc-for list="{{p.stackList}}" as="sk"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D9DEEC; background: #1C2546; border-radius: 6px; padding: 3px 8px">{{sk}}</span></sc-for></span>
+<div style="padding-top: 12px; border-top: 1px dashed #222C52">
+<sc-if value="{{p.isLink}}" hint-placeholder-val="{{false}}"><a href="{{p.href}}" onClick="{{p.onLink}}" style="font-size: 14px; font-weight: 800; color: #B9FC01; text-decoration: none">{{p.linkLabel}}</a></sc-if>
+<sc-if value="{{p.hasCase}}" hint-placeholder-val="{{true}}"><button type="button" class="peek" style="padding: 0; border: 0; background: transparent; font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 800; color: #B9FC01; cursor: pointer">How it was built ↗</button></sc-if>
+</div>
+<sc-if value="{{p.hasCase}}" hint-placeholder-val="{{false}}">
+<div class="pop" role="note" aria-label="{{p.name}} case">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<span style="font-size: 18px; font-weight: 900">{{p.name}}</span>
+<span style="{{p.statusStyle}}">{{p.status}}</span>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">{{p.where}}</span>
+<div style="background: #1C2546; border-radius: 10px; padding: 9px 11px; font-size: 13px; line-height: 1.5; color: #CDD3E6"><b style="color: #F2F4FA">Problem.</b> {{p.problem}}</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<sc-for list="{{p.steps}}" as="s" hint-placeholder-count="3">
+<div style="display: flex; gap: 8px; align-items: flex-start">
+<span style="flex: 0 0 22px; height: 22px; border-radius: 50%; border: 1.5px solid #222C52; font-family: 'JetBrains Mono', monospace; font-size: 12px; display: flex; align-items: center; justify-content: center">{{s.n}}</span>
+<div style="flex: 1; min-width: 0">
+<div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap"><span style="font-size: 13px; font-weight: 800">{{s.title}}</span><span style="{{s.tagStyle}}">{{s.tag}}</span></div>
+<div style="font-size: 12.5px; line-height: 1.45; color: #B8C0DA">{{s.text}}</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{p.results}}" as="r" hint-placeholder-count="2">
+<div style="flex: 1 1 90px; background: #0131CD; border-radius: 10px; padding: 8px 10px"><div style="font-size: 17px; font-weight: 900; color: #B9FC01; line-height: 1.1">{{r.value}}</div><div style="font-size: 12px; color: #CDD3E6; line-height: 1.3; margin-top: 2px">{{r.label}}</div></div>
+</sc-for>
+</div>
+<div style="font-size: 12.5px; line-height: 1.45; color: #CDD3E6"><b style="color: #F2F4FA">My role.</b> {{p.role}}</div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</sc-if>
+</section>
+
+<section id="journey" style="max-width: 1180px; margin: 0 auto; padding: 60px 24px 40px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF; margin-bottom: 8px">room 03 · journey</div>
+<h2 style="margin: 0 0 32px; font-size: 38px; font-weight: 900; letter-spacing: -0.01em">From operations to implementation</h2>
+<button type="button" class="hmtog" onClick="{{jbToggle}}" aria-expanded="{{jbExpanded}}" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: #141B33; border: 1px dashed #4D7BFF; border-radius: 16px; padding: 18px 22px; color: #F2F4FA; font-family: inherit; text-align: left; cursor: pointer; margin-bottom: {{jbGap}}"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 18px; font-weight: 900">{{jbLabel}}</span><span style="font-size: 14px; color: #B8C0DA">Now: AI Implementation Consultant · Before: Social Solutions, Cainiao, Mercado Livre, Autoglass</span></span><span class="px" style="flex: 0 0 auto; background: #0131CD; color: #FFFFFF; padding: 8px 12px; font-size: 13px; box-shadow: 3px 3px 0 #B9FC01">{{jbIcon}}</span></button>
+<sc-if value="{{jbOpen}}">
+<div style="font-size: 18px; font-weight: 900; margin: -16px 0 12px">Now</div>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<sc-for list="{{curJobs}}" as="j" hint-placeholder-count="1">
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 18px; padding: 22px 24px; display: flex; flex-wrap: wrap; gap: 16px 32px">
+<div style="flex: 0 0 180px; display: flex; flex-direction: column; gap: 4px">
+<div style="width: 140px; height: 72px; border-radius: 12px; overflow: hidden; border: 1px solid #222C52; background: {{j.logoBg}}; display: flex; align-items: center; justify-content: center; margin-bottom: 8px">
+<img src="{{j.logo}}" alt="{{j.company}}" style="width: 100%; height: 100%; object-fit: {{j.logoFit}}; display: block">
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #B8C0DA">{{j.when}}</span>
+<span style="font-size: 18px; font-weight: 900">{{j.company}}</span>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 16px; font-weight: 800; color: #B9FC01">{{j.role}}</span>
+<span style="font-size: 16px; line-height: 1.6; color: #CDD3E6">{{j.text}}</span>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{j.tags}}" as="t" hint-placeholder-count="3"><span style="font-size: 12px; font-weight: 700; background: #1C2546; color: #CDD3E6; border-radius: 999px; padding: 4px 10px">{{t}}</span></sc-for>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="margin-top: 22px; display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<span style="font-size: 18px; font-weight: 900">Previously</span>
+<span style="font-size: 14px; color: #B8C0DA">Hover a company to see the role</span>
+</div>
+<div style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<sc-for list="{{pastJobs}}" as="j" hint-placeholder-count="4">
+<div class="pcard" style="position: relative; background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 14px; display: flex; align-items: center; gap: 12px">
+<div style="flex: 0 0 96px; height: 50px; border-radius: 10px; overflow: hidden; border: 1px solid #222C52; background: {{j.logoBg}}"><img src="{{j.logo}}" alt="" style="width: 100%; height: 100%; object-fit: {{j.logoFit}}; display: block"></div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 15px; font-weight: 900">{{j.company}}</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">{{j.when}}</span>
+<button type="button" class="peek" style="align-self: flex-start; padding: 0; border: 0; background: transparent; font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 800; color: #B9FC01; cursor: pointer">See the role ↗</button>
+</div>
+<div class="pop" role="note" aria-label="{{j.company}} role">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="flex: 0 0 72px; height: 38px; border-radius: 8px; overflow: hidden; border: 1px solid #222C52; background: {{j.logoBg}}"><img src="{{j.logo}}" alt="" style="width: 100%; height: 100%; object-fit: {{j.logoFit}}; display: block"></div>
+<div style="min-width: 0"><div style="font-size: 16px; font-weight: 900">{{j.company}}</div><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">{{j.when}}</div></div>
+</div>
+<span style="font-size: 14px; font-weight: 800; color: #B9FC01">{{j.role}}</span>
+<span style="font-size: 13.5px; line-height: 1.55; color: #CDD3E6">{{j.text}}</span>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{j.tags}}" as="t" hint-placeholder-count="3"><span style="font-size: 12px; font-weight: 700; background: #1C2546; color: #CDD3E6; border-radius: 999px; padding: 3px 9px">{{t}}</span></sc-for>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+</sc-if>
+<div style="margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px">
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 18px 20px"><div style="height: 46px; margin-bottom: 12px; display: inline-flex; align-items: center; background: #F3F0E6; padding: 6px 10px; border-radius: 8px"><img src="assets/pucpr.svg" alt="PUCPR logo" style="height: 34px; width: auto; display: block"></div><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">2022</div><div style="font-size: 16px; font-weight: 800; margin-top: 4px">Postgraduate in Logistics and Supply Chain Management Engineering</div><div style="font-size: 14px; color: #B8C0DA">PUCPR</div></div>
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 18px 20px"><div style="height: 46px; margin-bottom: 12px; display: inline-flex; align-items: center; background: #F3F0E6; padding: 6px 10px; border-radius: 8px"><img src="assets/uvv.svg" alt="Vila Velha University logo" style="height: 34px; width: auto; display: block"></div><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">2018</div><div style="font-size: 16px; font-weight: 800; margin-top: 4px">B.Sc. in Civil Engineering</div><div style="font-size: 14px; color: #B8C0DA">Vila Velha University</div></div>
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 18px 20px"><div style="height: 46px; margin-bottom: 12px; display: inline-flex; align-items: center; background: #F3F0E6; padding: 6px 10px; border-radius: 8px"><img src="assets/ifes.svg" alt="IFES logo" style="height: 34px; width: auto; display: block"></div><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">2016</div><div style="font-size: 16px; font-weight: 800; margin-top: 4px">Technologist in Logistics</div><div style="font-size: 14px; color: #B8C0DA">IFES</div></div>
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 18px 20px"><div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">certificates</div><div style="font-size: 16px; font-weight: 800; margin-top: 4px">AI Engineer Core Track (2026)</div><div style="font-size: 14px; color: #B8C0DA">Ed Donner · Lean Six Sigma Green Belt (2020) · Prompt Engineering and Solutions Architecture, Alura</div></div>
+</div>
+</section>
+
+<section style="max-width: 1180px; margin: 0 auto; padding: 40px 24px">
+<h2 style="margin: 0 0 18px; font-size: 24px; font-weight: 900">Toolbox</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{skills}}" as="s" hint-placeholder-count="10"><span style="font-size: 14px; font-weight: 700; background: #141B33; border: 1px solid #222C52; border-radius: 999px; padding: 8px 14px">{{s}}</span></sc-for>
+</div>
+</section>
+
+<section id="agent" style="max-width: 1180px; margin: 0 auto; padding: 60px 24px 40px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF; margin-bottom: 8px">extra · front desk agent</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+<h2 style="margin: 0; font-size: 38px; font-weight: 900; letter-spacing: -0.01em">Ask my agent</h2>
+<span style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; background: #3A3320; color: #FFC857; border: 1px solid #8A7A3A; border-radius: 999px; padding: 6px 12px"><span style="position: relative; width: 8px; height: 8px; display: inline-block"><span class="ping" style="position: absolute; inset: 0; border-radius: 50%; background: #FFC857"></span><span style="position: absolute; inset: 0; border-radius: 50%; background: #FFC857"></span></span>Under construction</span>
+</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #CDD3E6">I'm training an agent that knows my background, my projects and how I work. While it learns, the commands on the right already answer.</p>
+<div style="background: #141B33; border: 1px solid #222C52; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">what works today and what's next</span>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700"><span style="width: 24px; height: 24px; border-radius: 8px; background: #1A2A10; color: #B9FC01; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900">✓</span>Knowledge base with my background and projects</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700"><span style="width: 24px; height: 24px; border-radius: 8px; background: #1A2A10; color: #B9FC01; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900">✓</span>Quick commands</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700"><span style="width: 24px; height: 24px; border-radius: 8px; background: #3A3320; color: #FFC857; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900">◐</span>Free-form chat with RAG<span style="font-size: 12px; font-weight: 700; color: #FFC857">· in progress</span></div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 700; color: #B8C0DA"><span style="width: 24px; height: 24px; border-radius: 8px; background: #1C2546; color: #B8C0DA; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 900">○</span><span><span style="font-family: 'JetBrains Mono', monospace; color: #B9FC01">/skill.md</span> for other agents to read</span><span style="font-size: 12px; font-weight: 700">· coming soon</span></div>
+</div>
+</div>
+<div style="flex: 1.4 1 460px; min-width: 0; background: #141B33; border: 1px solid #222C52; border-radius: 20px; display: flex; flex-direction: column; overflow: hidden">
+<div aria-hidden="true" style="height: 10px; background: repeating-linear-gradient(-45deg, #FFC857 0 14px, #0131CD 14px 28px)"></div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 16px 18px; border-bottom: 1px solid #222C52">
+<span style="width: 44px; height: 44px; border-radius: 13px; background: #1C2546; display: flex; align-items: center; justify-content: center"><svg viewBox="0 -7 40 37" width="34" height="32" aria-hidden="true"><path d="M8 3 a12 9 0 0 1 24 0 z" fill="#FFC857" stroke="#8A7A3A" stroke-width="0.8"></path><rect x="5" y="2" width="30" height="3" rx="1.5" fill="#FFC857" stroke="#8A7A3A" stroke-width="0.8"></rect><rect x="18.5" y="-6" width="3" height="5" rx="1" fill="#FFC857"></rect><rect x="4" y="8" width="4" height="9" rx="2" fill="#0B0F1F"></rect><rect x="32" y="8" width="4" height="9" rx="2" fill="#0B0F1F"></rect><rect x="7" y="2" width="26" height="23" rx="10" fill="#F2F4FA" stroke="#AEB6D2" stroke-width="0.8"></rect><rect x="10.5" y="6" width="19" height="14.5" rx="6.5" fill="#0B0F1F"></rect><g class="blink"><ellipse cx="16" cy="12.3" rx="2" ry="2.5" fill="#B9FC01"></ellipse><ellipse cx="24" cy="12.3" rx="2" ry="2.5" fill="#B9FC01"></ellipse></g></svg></span>
+<div style="flex: 1"><div style="font-size: 17px; font-weight: 900">Vinicius's agent</div><div style="font-size: 13px; color: #B8C0DA">Learning to answer for me</div></div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #FFC857; display: flex; align-items: center; gap: 6px"><span style="position: relative; width: 8px; height: 8px; display: inline-block"><span class="ping" style="position: absolute; inset: 0; border-radius: 50%; background: #FFC857"></span><span style="position: absolute; inset: 0; border-radius: 50%; background: #FFC857"></span></span>in training</span>
+</div>
+<div style="padding: 18px; display: flex; flex-direction: column; gap: 12px; min-height: 220px">
+<div style="align-self: flex-end; background: #0131CD; color: #FFFFFF; border-radius: 14px 14px 4px 14px; padding: 10px 14px; font-family: 'JetBrains Mono', monospace; font-size: 14px">{{askText}}</div>
+<div style="align-self: flex-start; max-width: 90%; background: #1C2546; border-radius: 4px 14px 14px 14px; padding: 12px 16px; font-size: 15px; line-height: 1.6">{{answerText}}</div>
+</div>
+<div style="padding: 0 18px 12px; display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{cmds}}" as="c" hint-placeholder-count="5">
+<button class="chip" onClick="{{c.pick}}" style="{{c.style}}">{{c.label}}</button>
+</sc-for>
+</div>
+<div style="padding: 14px 18px 18px; border-top: 1px solid #222C52; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap">
+<span style="font-size: 14px; font-weight: 800; color: #F2F4FA">Free-form chat coming soon</span>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #B8C0DA">for now, use the commands above</span>
+</div>
+<div style="position: relative; height: 8px; border-radius: 999px; background: #1C2546; overflow: hidden"><div class="slide" style="position: absolute; top: 0; bottom: 0; width: 40%; border-radius: 999px; background: #B9FC01"></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="contact" style="background: #070A16; color: #F2F4FA; border-top: 2px solid #FFC857; margin-top: 40px">
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: flex-end">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #8FA8FF">room 04 · contact</div>
+<div style="font-size: 36px; font-weight: 900; line-height: 1.15">Got a process that should run itself?</div>
+<div style="font-size: 16px; color: #B8C0DA; line-height: 1.6">Available for projects and Corp-to-Corp contracts (U.S. company) or as a contractor in Brazil. Open to remote work.</div>
+</div>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<a href="mailto:viiniciiusgava@gmail.com" style="padding: 14px 20px; border-radius: 14px; background: #B9FC01; color: #070A16; font-size: 16px; font-weight: 900; text-decoration: none">Send an email</a>
+<a href="https://www.linkedin.com/in/viniciusgavaa" style="padding: 14px 20px; border-radius: 14px; border: 1px solid #2E3A6B; color: #FFFFFF; font-size: 16px; font-weight: 800; text-decoration: none">LinkedIn</a>
+<a href="https://github.com/viiniciiusgavaa" style="padding: 14px 20px; border-radius: 14px; border: 1px solid #2E3A6B; color: #FFFFFF; font-size: 16px; font-weight: 800; text-decoration: none">GitHub</a>
+</div>
+</div>
+</footer>
+
+</div>
+</template>
+<template id="tpl-MapHospitality">
+
+<div style="font-family: Manrope, system-ui, sans-serif; color: #F2F4FA;">
+<div>
+
+
+<div style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid #141B33; background: radial-gradient(circle at 58% 62%, rgba(185,252,1,0.10), rgba(7,10,22,0) 55%), #070A16">
+  <div style="position: relative; width: 100%; aspect-ratio: 1000 / 640">
+    <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <g fill="#0F1530">
+        <ellipse cx="425" cy="195" rx="26" ry="20"></ellipse>
+        <ellipse cx="392" cy="238" rx="18" ry="12"></ellipse>
+        <ellipse cx="545" cy="300" rx="14" ry="10"></ellipse>
+        <ellipse cx="300" cy="130" rx="30" ry="42"></ellipse>
+        <ellipse cx="880" cy="330" rx="60" ry="38"></ellipse>
+        <ellipse cx="820" cy="660" rx="210" ry="110"></ellipse>
+        <ellipse cx="760" cy="90" rx="28" ry="40"></ellipse>
+        <ellipse cx="480" cy="560" rx="22" ry="16"></ellipse>
+      </g>
+      <g stroke="#B9FC01" stroke-opacity="0.28" fill="none">
+        <path d="M140 610 L360 470 L520 365 L600 250 L645 120 L700 0" stroke-width="2"></path>
+        <path d="M120 470 L560 488 L1000 560" stroke-width="2"></path>
+        <path d="M300 0 L292 640" stroke-width="1.2"></path>
+        <path d="M680 640 L640 300 L705 0" stroke-width="1.2"></path>
+        <path d="M760 640 L700 470 L880 260 L1000 180" stroke-width="1.2"></path>
+        <path d="M560 232 L1000 200" stroke-width="1.2"></path>
+        <path d="M340 300 L520 345" stroke-width="1" stroke-opacity="0.18"></path>
+      </g>
+      <g fill="#0131CD"><circle cx="250" cy="500" r="4"></circle><circle cx="268" cy="522" r="4"></circle><circle cx="330" cy="505" r="4"></circle><circle cx="420" cy="520" r="4"></circle><circle cx="440" cy="590" r="4"></circle><circle cx="545" cy="600" r="4"></circle><circle cx="700" cy="440" r="4"></circle><circle cx="230" cy="590" r="4"></circle><circle cx="380" cy="612" r="4"></circle><circle cx="612" cy="432" r="4"></circle><circle cx="300" cy="545" r="4"></circle><circle cx="560" cy="440" r="4"></circle></g>
+      <g font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#4A5585" letter-spacing="3">
+        <text x="600" y="385" text-anchor="middle">LAKE BUENA VISTA</text>
+        <text x="175" y="525" text-anchor="middle">FOUR CORNERS</text>
+        <text x="410" y="448" text-anchor="middle">CELEBRATION</text>
+        <text x="705" y="545" text-anchor="middle">KISSIMMEE</text>
+      </g>
+      <g font-family="Manrope, sans-serif" font-size="11" font-weight="700" fill="#B8C0DA">
+        <rect x="284" y="70" width="32" height="18" rx="4" fill="#070A16" stroke="#2A3A7A"></rect><text x="300" y="83" text-anchor="middle">429</text>
+        <rect x="586" y="236" width="28" height="18" rx="4" fill="#070A16" stroke="#2A3A7A"></rect><text x="600" y="249" text-anchor="middle">I-4</text>
+        <rect x="186" y="462" width="32" height="18" rx="4" fill="#070A16" stroke="#2A3A7A"></rect><text x="202" y="475" text-anchor="middle">192</text>
+        <rect x="824" y="312" width="32" height="18" rx="4" fill="#070A16" stroke="#2A3A7A"></rect><text x="840" y="325" text-anchor="middle">417</text>
+        <rect x="764" y="200" width="32" height="18" rx="4" fill="#070A16" stroke="#2A3A7A"></rect><text x="780" y="213" text-anchor="middle">528</text>
+      </g>
+    </svg>
+
+    <sc-for list="{{routes}}" as="l" hint-placeholder-count="8">
+      <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible">
+        <path d="{{l.d}}" fill="none" stroke="#B9FC01" stroke-opacity="0.16" stroke-width="9" stroke-linecap="round"></path>
+        <path d="{{l.d}}" fill="none" stroke="{{l.color}}" stroke-width="2" stroke-linecap="round" stroke-dasharray="{{l.dash}}" style="filter: drop-shadow(0 0 5px #B9FC01)"></path>
+        <path class="flow" d="{{l.d}}" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 30"></path>
+      </svg>
+    </sc-for>
+
+    <sc-for list="{{dests}}" as="d" hint-placeholder-count="8">
+      <div class="mdest" style="position: absolute; left: {{d.left}}; top: {{d.top}}; width: 40px; height: 40px; margin: -20px 0 0 -20px">
+        <div style="width: 40px; height: 40px; border-radius: 50%; background: #0A0E1C; border: 2px solid #B9FC01; box-sizing: border-box; display: flex; align-items: center; justify-content: center; color: #D4FF6A; box-shadow: 0 0 18px rgba(185,252,1,0.55), inset 0 0 10px rgba(185,252,1,0.25)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{d.icon}}"></path></svg>
+        </div>
+        <div class="mlabel" style="position: absolute; left: {{d.lx}}; right: {{d.rx}}; top: {{d.ty}}; transform: {{d.tf}}; white-space: nowrap; text-align: {{d.ta}}; line-height: 1.15; text-shadow: 0 1px 6px #000000">
+          <div style="font-size: 14px; font-weight: 800; color: #D4FF6A">{{d.min}} min</div>
+          <div style="font-size: 12px; font-weight: 700; color: #F2F4FA">{{d.name}}</div>
+        </div>
+      </div>
+    </sc-for>
+
+    <sc-for list="{{pins}}" as="p" hint-placeholder-count="9">
+      <button type="button" aria-label="{{p.name}}" onClick="{{p.pick}}" style="position: absolute; left: {{p.left}}; top: {{p.top}}; width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center">
+        <span style="width: {{p.size}}; height: {{p.size}}; border-radius: 50%; background: {{p.fill}}; box-shadow: {{p.glow}}"></span>
+      </button>
+    </sc-for>
+
+    <div style="position: absolute; left: {{selPin.left}}; top: {{selPin.top}}; transform: translate(-50%, -46px); pointer-events: none; white-space: nowrap; font-size: 13px; font-weight: 700; color: #FFFFFF; background: #0A0E1C; border: 1px solid #B9FC01; padding: 6px 12px; border-radius: 999px; box-shadow: 0 0 16px rgba(185,252,1,0.5)">{{sel.name}}</div>
+
+  </div>
+    <aside class="ovl" style="position: absolute; left: 16px; top: 16px; width: 280px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.92); border: 1px solid #1C2546; border-radius: 16px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+      <div>
+        <div style="font-size: 26px; font-weight: 800; color: #B9FC01; letter-spacing: -0.02em">StayFinder</div>
+        <div style="font-size: 13px; color: #A9B2CF; margin-top: 2px">Search a vacation home and see the drive time to every park.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
+          <div style="background: #0B0F1F; border: 1px solid #161E3D; border-radius: 12px; padding: 10px 12px">
+            <div style="font-size: 26px; font-weight: 800; color: #D4FF6A">{{k.value}}</div>
+            <div style="font-size: 11px; color: #A9B2CF; line-height: 1.3">{{k.label}}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="q" style="font-size: 12px; font-weight: 600; color: #A9B2CF">Search a property</label>
+        <input id="q" type="text" placeholder="Disney Springs" value="{{q}}" onChange="{{onSearch}}" style="height: 44px; box-sizing: border-box; border: 1px solid #222C52; border-radius: 999px; padding: 0 16px; font: inherit; font-size: 14px; background: #0A0E1C; color: #F2F4FA">
+        <sc-for list="{{matches}}" as="m" hint-placeholder-count="0">
+          <button type="button" onClick="{{m.pick}}" style="min-height: 40px; text-align: left; border: 1px solid #222C52; border-radius: 10px; padding: 8px 12px; font: inherit; font-size: 13px; cursor: pointer; background: #0B0F1F; color: #F2F4FA">{{m.name}} · <span style="color: #A9B2CF">{{m.area}}</span></button>
+        </sc-for>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: #A9B2CF">
+        <span style="display: flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #B9FC01; box-shadow: 0 0 8px #B9FC01"></span>Properties</span>
+        <span style="display: flex; align-items: center; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #B9FC01; box-sizing: border-box"></span>Parks and airport</span>
+      </div>
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; color: #070A16; background: #D4FF6A; padding: 3px 10px; border-radius: 999px">Demo · fictional data</span>
+    </aside>
+
+    <div class="ovl" style="position: absolute; right: 16px; bottom: 16px; width: 330px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.94); border: 1px solid #B9FC01; border-radius: 16px; padding: 18px; box-sizing: border-box; box-shadow: 0 0 28px rgba(185,252,1,0.25)">
+      <div style="font-size: 24px; font-weight: 800; color: #D4FF6A; letter-spacing: -0.01em">{{sel.name}}</div>
+      <div style="font-size: 12px; color: #A9B2CF; margin: 2px 0 12px">{{sel.sub}}</div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 18px; row-gap: 8px">
+        <sc-for list="{{dests}}" as="d" hint-placeholder-count="8">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 13px">
+            <span style="display: flex; align-items: center; gap: 6px; color: #F2F4FA; overflow: hidden; white-space: nowrap"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#D4FF6A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="{{d.icon}}"></path></svg>{{d.short}}</span>
+            <span style="font-weight: 800; color: #D4FF6A">{{d.min}} min</span>
+          </div>
+        </sc-for>
+      </div>
+      <a href="#" style="margin-top: 14px; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 10px; background: #B9FC01; color: #070A16; text-decoration: none; font-weight: 800; font-size: 14px; box-shadow: 0 0 16px rgba(185,252,1,0.45)">Open full profile →</a>
+    </div>
+</div>
+</div>
+</div>
+</template>
+<template id="tpl-MapSales">
+
+<div style="font-family: Manrope, system-ui, sans-serif; color: #F2F4FA;">
+<div>
+
+
+<div style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid #141B33; background: radial-gradient(circle at 40% 45%, rgba(77,123,255,0.09), rgba(7,10,22,0) 55%), #070A16">
+  <div style="position: relative; width: 100%; aspect-ratio: 1000 / 640">
+    <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <g fill="#0F1530">
+        <path d="M720 0 L775 0 L778 165 L792 195 L745 225 L700 212 L716 120 Z"></path>
+        <path d="M560 232 L700 212 L745 225 L792 195 L806 232 L762 292 L735 332 L705 410 L692 470 L640 502 L560 482 L520 432 L470 382 L500 332 L522 282 Z"></path>
+        <path d="M792 195 L822 160 L884 168 L862 202 L808 216 L806 232 Z"></path>
+        <path d="M300 498 L330 470 L520 432 L560 482 L500 494 L340 504 Z"></path>
+        <path d="M262 250 L312 240 L332 320 L342 400 L330 470 L300 498 L252 480 L256 380 Z"></path>
+        <path d="M640 502 L692 470 L705 525 L722 640 L556 640 L600 562 Z"></path>
+        <path d="M240 0 L278 0 L298 120 L288 205 L262 250 L250 200 L262 100 Z"></path>
+      </g>
+      <g fill="none" stroke="#4D7BFF" stroke-opacity="0.35" stroke-width="1">
+        <path d="M720 0 L775 0 L778 165 L792 195 L745 225 L700 212 L716 120 Z"></path>
+        <path d="M560 232 L700 212 L745 225 L792 195 L806 232 L762 292 L735 332 L705 410 L692 470 L640 502 L560 482 L520 432 L470 382 L500 332 L522 282 Z"></path>
+        <path d="M300 498 L330 470 L520 432 L560 482 L500 494 L340 504 Z"></path>
+        <path d="M262 250 L312 240 L332 320 L342 400 L330 470 L300 498 L252 480 L256 380 Z"></path>
+      </g>
+      <ellipse cx="762" cy="268" rx="16" ry="12" fill="#070A16" stroke="#4D7BFF" stroke-opacity="0.35"></ellipse>
+      <g stroke="#4D7BFF" stroke-opacity="0.16" stroke-width="1.4" fill="none">
+        <path d="M0 220 L240 300 L520 240 L700 60"></path>
+        <path d="M120 0 L180 640"></path>
+        <path d="M400 640 L430 300 L470 0"></path>
+        <path d="M800 0 L860 640"></path>
+        <path d="M880 300 L1000 360"></path>
+        <path d="M560 640 L620 520"></path>
+        <path d="M0 120 L240 160"></path>
+      </g>
+      <g fill="#141B33">
+        <rect x="200" y="300" width="40" height="7"></rect><rect x="200" y="318" width="40" height="7"></rect><rect x="200" y="336" width="40" height="7"></rect><rect x="200" y="354" width="40" height="7"></rect><rect x="200" y="372" width="40" height="7"></rect>
+        <rect x="470" y="300" width="40" height="7"></rect><rect x="470" y="318" width="34" height="7"></rect>
+      </g>
+      <g font-family="Manrope, sans-serif" font-size="12" font-weight="700" fill="#2E3A6B" letter-spacing="3">
+        <text x="300" y="320" transform="rotate(80 300 320)" text-anchor="middle">NEWARK BAY</text>
+        <text x="620" y="420" text-anchor="middle">UPPER BAY</text>
+        <text x="747" y="100" transform="rotate(-88 747 100)" text-anchor="middle">HUDSON RIVER</text>
+        <text x="915" y="70" text-anchor="middle">MANHATTAN</text>
+        <text x="930" y="480" text-anchor="middle">BROOKLYN</text>
+        <text x="420" y="615" text-anchor="middle">STATEN ISLAND</text>
+        <text x="555" y="185" text-anchor="middle">JERSEY CITY</text>
+        <text x="390" y="465" text-anchor="middle">BAYONNE</text>
+      </g>
+    </svg>
+
+    <sc-for list="{{routes}}" as="l" hint-placeholder-count="8">
+      <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible">
+        <path d="{{l.d}}" fill="none" stroke="#4D7BFF" stroke-opacity="0.14" stroke-width="{{l.glowW}}" stroke-linecap="round"></path>
+        <path d="{{l.d}}" fill="none" stroke="#4D7BFF" stroke-opacity="{{l.op}}" stroke-width="{{l.w}}" stroke-linecap="round" style="filter: drop-shadow(0 0 5px #4D7BFF)"></path>
+        <path class="flow" d="{{l.d}}" fill="none" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="2 30"></path>
+      </svg>
+    </sc-for>
+
+    <div style="position: absolute; left: {{wh.left}}; top: {{wh.top}}; width: 48px; height: 48px; margin: -24px 0 0 -24px; border-radius: 12px; background: #0A0E1C; border: 2px solid #FFFFFF; box-sizing: border-box; display: flex; align-items: center; justify-content: center; color: #FFFFFF; box-shadow: 0 0 24px rgba(77,123,255,0.7)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-13l9 -4l9 4v13M13 13h4v8h-10v-6h6M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3"></path></svg>
+      <div style="position: absolute; bottom: 56px; left: 50%; transform: translateX(-50%); white-space: nowrap; text-align: center; line-height: 1.15; text-shadow: 0 1px 6px #000000">
+        <div style="font-size: 14px; font-weight: 800; color: #FFFFFF">Warehouse NJ-01</div>
+        <div style="font-size: 12px; font-weight: 600; color: #8FA8FF">Greenville rail yard</div>
+      </div>
+    </div>
+
+    <sc-for list="{{pins}}" as="p" hint-placeholder-count="8">
+      <button type="button" aria-label="{{p.name}}" onClick="{{p.pick}}" style="position: absolute; left: {{p.left}}; top: {{p.top}}; width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center">
+        <span style="width: 36px; height: 36px; border-radius: 50%; background: {{p.bg}}; border: 2px solid #4D7BFF; box-sizing: border-box; display: flex; align-items: center; justify-content: center; color: {{p.fg}}; box-shadow: {{p.glow}}">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21v-10M19 21v-10M3 7l2 -4h14l2 4M3 7a3 3 0 0 0 6 0a3 3 0 0 0 6 0a3 3 0 0 0 6 0M9 21v-6h6v6"></path></svg>
+        </span>
+        <span class="mlabel" style="position: absolute; left: {{p.lx}}; right: {{p.rx}}; top: 50%; transform: translateY(-50%); white-space: nowrap; text-align: {{p.ta}}; font: inherit; line-height: 1.15; text-shadow: 0 1px 6px #000000">
+          <span style="display: block; font-size: 14px; font-weight: 800; color: #8FA8FF">{{p.salesLabel}}</span>
+          <span style="display: block; font-size: 12px; font-weight: 700; color: #F2F4FA">{{p.name}}</span>
+        </span>
+      </button>
+    </sc-for>
+
+  </div>
+    <aside class="ovl" style="position: absolute; left: 16px; top: 16px; width: 270px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.92); border: 1px solid #1C2546; border-radius: 16px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+      <div>
+        <div style="font-size: 26px; font-weight: 800; color: #4D7BFF; letter-spacing: -0.02em">Flowhub</div>
+        <div style="font-size: 13px; color: #A9B2CF; margin-top: 2px">Warehouse-to-store sales network. Click a store.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
+          <div style="background: #0A0E1C; border: 1px solid #1C2546; border-radius: 12px; padding: 10px 12px">
+            <div style="font-size: 22px; font-weight: 800; color: #8FA8FF">{{k.value}}</div>
+            <div style="font-size: 11px; color: #A9B2CF; line-height: 1.3">{{k.label}}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="font-size: 12px; font-weight: 600; color: #A9B2CF">Top stores</div>
+        <sc-for list="{{top}}" as="s" hint-placeholder-count="3">
+          <button type="button" onClick="{{s.pick}}" style="min-height: 40px; display: flex; flex-direction: column; gap: 5px; justify-content: center; text-align: left; border: 0; border-radius: 10px; padding: 6px 10px; font: inherit; cursor: pointer; background: {{s.rowBg}}; color: #F2F4FA">
+            <span style="display: flex; justify-content: space-between; width: 100%; font-size: 12px"><span style="font-weight: 700">{{s.name}}</span><span style="color: #8FA8FF; font-weight: 800">{{s.salesLabel}}</span></span>
+            <span style="display: block; width: 100%; height: 3px; border-radius: 2px; background: #141B33"><span style="display: block; height: 3px; border-radius: 2px; width: {{s.bar}}; background: #4D7BFF; box-shadow: 0 0 6px #4D7BFF"></span></span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="font-size: 12px; color: #A9B2CF">Route weight = sales volume</div>
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; color: #070A16; background: #8FA8FF; padding: 3px 10px; border-radius: 999px">Demo · fictional data</span>
+    </aside>
+
+    <div class="ovl" style="position: absolute; right: 16px; bottom: 16px; width: 330px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.94); border: 1px solid #4D7BFF; border-radius: 16px; padding: 18px; box-sizing: border-box; box-shadow: 0 0 28px rgba(77,123,255,0.25)">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+        <div style="font-size: 24px; font-weight: 800; color: #8FA8FF; letter-spacing: -0.01em">{{sel.name}}</div>
+        <div style="font-size: 12px; font-weight: 800; color: {{sel.growthColor}}">{{sel.growth}} MoM</div>
+      </div>
+      <div style="font-size: 12px; color: #A9B2CF; margin: 2px 0 12px">Supplied by Warehouse NJ-01 · {{sel.dist}} mi</div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{cardRows}}" as="r" hint-placeholder-count="4">
+          <div style="background: #0A0E1C; border: 1px solid #1C2546; border-radius: 10px; padding: 8px 10px">
+            <div style="font-size: 11px; color: #A9B2CF">{{r.label}}</div>
+            <div style="font-size: 17px; font-weight: 800">{{r.value}}</div>
+          </div>
+        </sc-for>
+      </div>
+      <a href="#" style="margin-top: 14px; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 10px; background: #4D7BFF; color: #070A16; text-decoration: none; font-weight: 800; font-size: 14px; box-shadow: 0 0 16px rgba(77,123,255,0.45)">Open store report →</a>
+    </div>
+</div>
+</div>
+</div>
+</template>
+<template id="tpl-MapOperations">
+
+<div style="font-family: Manrope, system-ui, sans-serif; color: #F2F4FA;">
+<div>
+
+
+<div style="position: relative; border-radius: 20px; overflow: hidden; border: 1px solid #141B33; background: radial-gradient(circle at 45% 55%, rgba(242,244,250,0.10), rgba(7,10,22,0) 55%), #0A0E1C">
+  <div style="position: relative; width: 100%; aspect-ratio: 1000 / 640">
+    <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%">
+      <defs>
+        <pattern id="opsgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 L0 0 L0 40" fill="none" stroke="#141B33" stroke-width="1"></path></pattern>
+      </defs>
+      <rect width="1000" height="640" fill="url(#opsgrid)"></rect>
+      <g transform="translate(120 0)">
+      <polygon points="295,30 407,45 420,78 445,120 495,142 545,150 607,187 607,240 582,277 557,330 557,375 539,420 520,450 482,462 445,492 439,532 420,555 395,592 376,610 357,570 326,555 370,510 364,487 351,465 320,405 326,367 295,337 295,307 232,270 170,270 132,240 126,210 170,165 176,120 170,75 207,75 245,45" fill="rgba(242,244,250,0.07)" stroke="#F2F4FA" stroke-width="2" stroke-linejoin="round" style="filter: drop-shadow(0 0 6px #F2F4FA)"></polygon>
+      <g stroke="#F2F4FA" stroke-opacity="0.35" stroke-width="1" fill="none">
+        <path d="M295 151 L445 120"></path><path d="M232 270 L420 240 L545 150"></path><path d="M420 240 L446 342 L557 330"></path><path d="M446 342 L320 405"></path><path d="M446 342 L520 450"></path><path d="M370 510 L482 462"></path><path d="M420 240 L420 78"></path>
+      </g>
+      </g>
+      <g stroke="#F2F4FA" stroke-width="1.4" fill="none" style="filter: drop-shadow(0 0 4px #F2F4FA)">
+        <path d="M592 446 L780 446 L830 150"></path>
+        <path d="M592 452 L788 452 L838 150"></path>
+        <path d="M592 458 L796 458 L846 150"></path>
+        <path d="M592 464 L804 464 L854 150"></path>
+      </g>
+    </svg>
+
+    <sc-for list="{{routes}}" as="l" hint-placeholder-count="11">
+      <svg viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible">
+        <path d="{{l.d}}" fill="none" stroke="{{l.color}}" stroke-opacity="0.14" stroke-width="8" stroke-linecap="round"></path>
+        <path d="{{l.d}}" fill="none" stroke="{{l.color}}" stroke-width="{{l.w}}" stroke-linecap="round" stroke-dasharray="{{l.dash}}" style="filter: drop-shadow(0 0 5px {{l.color}})"></path>
+        <path class="flow" d="{{l.d}}" fill="none" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="2 30"></path>
+      </svg>
+    </sc-for>
+
+    <div style="position: absolute; left: {{hub.left}}; top: {{hub.top}}; width: 40px; height: 40px; margin: -20px 0 0 -20px">
+      <span class="pulse" style="position: absolute; inset: 0; border-radius: 10px; border: 2px solid #F2F4FA"></span>
+      <div style="position: absolute; inset: 0; border-radius: 10px; background: #F2F4FA; color: #070A16; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 26px #F2F4FA">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5M12 12l8 -4.5M12 12l0 9M12 12l-8 -4.5"></path></svg>
+      </div>
+      <div style="position: absolute; right: 48px; top: 50%; transform: translateY(-50%); white-space: nowrap; text-align: right; line-height: 1.15; text-shadow: 0 1px 6px #000000">
+        <div style="font-size: 14px; font-weight: 800; color: #F2F4FA">Hub SP-01</div>
+        <div style="font-size: 11px; font-weight: 600; color: #B8C0DA">Cajamar</div>
+      </div>
+    </div>
+
+    <sc-for list="{{pins}}" as="p" hint-placeholder-count="11">
+      <button type="button" aria-label="{{p.name}}" onClick="{{p.pick}}" style="position: absolute; left: {{p.left}}; top: {{p.top}}; width: 44px; height: 44px; margin: -22px 0 0 -22px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center">
+        <span style="width: {{p.size}}; height: {{p.size}}; border-radius: 50%; background: {{p.fill}}; border: 2px solid {{p.color}}; box-sizing: border-box; box-shadow: 0 0 14px {{p.color}}"></span>
+        <span class="mlabel" style="position: absolute; left: {{p.lx}}; right: {{p.rx}}; top: 50%; transform: translateY(-50%); white-space: nowrap; text-align: {{p.ta}}; font: inherit; line-height: 1.15; text-shadow: 0 1px 6px #000000">
+          <span style="display: block; font-size: 13px; font-weight: 800; color: {{p.color}}">{{p.otif}}%</span>
+          <span style="display: block; font-size: 11px; font-weight: 700; color: #F2F4FA">{{p.name}}</span>
+        </span>
+      </button>
+    </sc-for>
+
+  </div>
+    <aside class="ovl" style="position: absolute; left: 16px; top: 16px; width: 250px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.92); border: 1px solid #1C2546; border-radius: 16px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px">
+      <div>
+        <div style="font-size: 26px; font-weight: 800; color: #F2F4FA; letter-spacing: -0.02em">Routewise</div>
+        <div style="font-size: 13px; color: #A9B2CF; margin-top: 2px">Last-mile network and SLA by region. Click a city.</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
+          <div style="background: #0B0F1F; border: 1px solid #1C2546; border-radius: 12px; padding: 10px 12px">
+            <div style="font-size: 22px; font-weight: 800; color: {{k.color}}">{{k.value}}</div>
+            <div style="font-size: 11px; color: #A9B2CF; line-height: 1.3">{{k.label}}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; font-size: 12px; color: #A9B2CF">
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 18px; border-top: 2px solid #F2F4FA; box-shadow: 0 0 6px #F2F4FA"></span>On track (OTIF ≥ 93%)</span>
+        <span style="display: flex; align-items: center; gap: 8px"><span style="width: 18px; border-top: 2px dashed #FFC857"></span>At risk</span>
+      </div>
+      <span style="align-self: flex-start; font-size: 11px; font-weight: 700; color: #070A16; background: #F2F4FA; padding: 3px 10px; border-radius: 999px">Demo · fictional data</span>
+    </aside>
+
+    <div class="ovl" style="position: absolute; right: 16px; top: 16px; width: 260px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.92); border: 1px solid #F2F4FA; border-radius: 16px; padding: 14px 16px; box-sizing: border-box; box-shadow: 0 0 24px rgba(242,244,250,0.22)">
+      <div style="font-size: 11px; font-weight: 700; color: #A9B2CF; letter-spacing: 0.1em">HUB SP-01 · LIVE</div>
+      <div style="display: flex; align-items: baseline; gap: 6px; margin-top: 4px"><span style="font-size: 26px; font-weight: 800; color: #F2F4FA">{{hubStats.throughput}}</span><span style="font-size: 12px; color: #A9B2CF">packages/day</span></div>
+      <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 10px"><span style="color: #A9B2CF">Dock utilization</span><span style="font-weight: 800">82%</span></div>
+      <div style="height: 4px; border-radius: 2px; background: #1C2546; margin-top: 4px"><div style="height: 4px; width: 82%; border-radius: 2px; background: #F2F4FA; box-shadow: 0 0 8px #F2F4FA"></div></div>
+      <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 10px"><span style="color: #A9B2CF">Dispatch cutoff</span><span style="font-weight: 800">14:00</span></div>
+    </div>
+
+    <div class="ovl" style="position: absolute; right: 16px; bottom: 16px; width: 320px; max-width: calc(100% - 32px); background: rgba(10,14,28,0.94); border: 1px solid {{sel.color}}; border-radius: 16px; padding: 18px; box-sizing: border-box; box-shadow: 0 0 28px {{sel.glow}}">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px">
+        <div style="font-size: 24px; font-weight: 800; color: {{sel.color}}; letter-spacing: -0.01em">{{sel.name}}</div>
+        <span style="font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 999px; background: {{sel.color}}; color: #070A16">{{sel.status}}</span>
+      </div>
+      <div style="font-size: 12px; color: #A9B2CF; margin: 2px 0 12px">Served from Hub SP-01 · {{sel.km}} km</div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{cardRows}}" as="r" hint-placeholder-count="4">
+          <div style="background: #0B0F1F; border: 1px solid #1C2546; border-radius: 10px; padding: 8px 10px">
+            <div style="font-size: 11px; color: #A9B2CF">{{r.label}}</div>
+            <div style="font-size: 17px; font-weight: 800">{{r.value}}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</template>
+<script src="js/dc-lite.js"></script>
+<script src="js/components.js"></script>
+</body>
+</html>

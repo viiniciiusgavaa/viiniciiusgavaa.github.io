@@ -1,0 +1,64 @@
+/* Main */
+body{margin:0;background:#0B0F1F}
+a{color:#B9FC01}a:hover{color:#B9FC01}
+.px{font-family:'Silkscreen','JetBrains Mono',monospace;font-weight:400;letter-spacing:0.02em;text-transform:uppercase}
+.pxbtn{display:inline-flex;align-items:center;gap:8px;border-radius:0;box-shadow:4px 4px 0 #B9FC01;transition:transform .1s steps(2),box-shadow .1s steps(2)}
+.pxbtn.ghost{box-shadow:4px 4px 0 #070A16}
+.pxbtn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #B9FC01}
+.pxbtn.ghost:hover{box-shadow:6px 6px 0 #F2F4FA}
+.pxbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #B9FC01}
+.cursor{animation:cur 1.1s steps(1) infinite}
+@keyframes cur{50%{opacity:0}}
+.blinkpx{animation:bpx 3.4s steps(1) infinite}
+@keyframes bpx{0%,92%{opacity:1}93%,97%{opacity:0}}
+.bob{animation:bob 1.2s steps(2) infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+section[id],footer[id],header[id],button[id]{scroll-margin-top:84px}
+@media (hover: none), (max-width: 700px){.pcard .pop{position:fixed !important;left:8px !important;right:8px !important;top:auto !important;bottom:8px !important;max-height:74vh;overflow-y:auto;z-index:100 !important;border-radius:20px}}
+@media (max-width: 700px){.nl{display:none !important}}
+@media (prefers-reduced-motion: reduce){.cursor,.blinkpx,.bob{animation:none}.pxbtn{transition:none}}
+.blink{transform-box:fill-box;transform-origin:center;animation:blink 4.4s infinite}
+.room{transition:transform 0.2s ease, border-color 0.2s ease}
+.room:hover{transform:translateY(-3px);border-color:#222C52 !important}
+.room:hover .arm{animation:wave 0.3s ease-in-out infinite alternate}
+.arm{transform-box:fill-box;transform-origin:top center}
+.chip{transition:background 0.15s ease}
+.hmtog:hover{border-style:solid !important;background:#18203D !important}
+.chip:hover{background:#1A2A10 !important}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(0.1)}}
+@keyframes wave{from{transform:rotate(-150deg)}to{transform:rotate(-110deg)}}
+.pcard .pop{position:absolute;left:-10px;right:-10px;top:-10px;z-index:30;background:#141B33;border:2px solid #222C52;border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 18px 40px rgba(30,36,48,0.22);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .18s ease,transform .18s ease,visibility .18s}
+.pcard:hover .pop,.pcard:focus-within .pop{opacity:1;visibility:visible;transform:none}
+.pcard:hover{z-index:20}
+@media (prefers-reduced-motion: reduce){.pcard .pop{transition:none;transform:none}}
+@keyframes ping{0%{transform:scale(1);opacity:0.8}100%{transform:scale(2.6);opacity:0}}
+.ping{animation:ping 1.6s ease-out infinite}
+@keyframes slide{from{left:-40%}to{left:100%}}
+.slide{animation:slide 1.8s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.blink,.room:hover .arm,.ping{animation:none}.slide{animation:none;left:0}.room:hover{transform:none}}
+
+/* MapHospitality */
+body{margin:0}
+@keyframes flow{to{stroke-dashoffset:-64}}
+.flow{animation:flow 1.6s linear infinite}
+@media (prefers-reduced-motion: reduce){.flow{animation:none}}
+@media (max-width: 760px){.mlabel{display:none !important}.mdest{transform:scale(.72)}}
+@media (max-width: 760px){.ovl{position:static !important;width:auto !important;max-width:none !important;margin:12px !important}}
+
+/* MapSales */
+body{margin:0}
+@keyframes flow{to{stroke-dashoffset:-64}}
+.flow{animation:flow 1.6s linear infinite}
+@media (prefers-reduced-motion: reduce){.flow{animation:none}}
+@media (max-width: 760px){.mlabel{display:none !important}.mdest{transform:scale(.72)}}
+@media (max-width: 760px){.ovl{position:static !important;width:auto !important;max-width:none !important;margin:12px !important}}
+
+/* MapOperations */
+body{margin:0}
+@keyframes flow{to{stroke-dashoffset:-64}}
+.flow{animation:flow 1.6s linear infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:0.7}100%{transform:scale(2.4);opacity:0}}
+.pulse{animation:pulse 2s ease-out infinite}
+@media (prefers-reduced-motion: reduce){.flow,.pulse{animation:none}}
+@media (max-width: 760px){.mlabel{display:none !important}.mdest{transform:scale(.72)}}
+@media (max-width: 760px){.ovl{position:static !important;width:auto !important;max-width:none !important;margin:12px !important}}
